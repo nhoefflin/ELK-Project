@@ -1,11 +1,10 @@
 # ELK-Project
 Automated ELK Stack Deployment - Azure
 
-## Automated ELK Stack Deploymen
 
-hey 
+## Automated ELK Stack Deployment
 
-The files in this repository were used to configure the network depicted below.
+
 
 ![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
 
