@@ -89,7 +89,10 @@ We have installed the following Beats on these machines:
 - Metricbeat, which will monitor the VMs by periodically collecting metrics from the operating system and from services running on the server.
 
 The playbook below installs Filebeat on the target hosts.
-- https://github.com/nhoefflin/ELK-Project/blob/main/Ansible/ansible-playbook.yml
+- https://github.com/nhoefflin/ELK-Project/blob/main/Ansible/filebeat-playbook.yml
+
+The playbook below installs Metricbeat on the target hosts.
+  - https://github.com/nhoefflin/ELK-Project/blob/main/Ansible/metricbeat-playbook.yml
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
@@ -108,4 +111,6 @@ SSH into the control node and follow the steps below:
 
 
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+To download and run the playbooks, use the following commands:
+  - ansible-playbook filebeat-playbook.yml from /etc/ansible.
+  - ansible-playbook metricbeat-playbook from /etc/ansible.
