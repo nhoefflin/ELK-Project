@@ -66,16 +66,14 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - We can make updates to our server without disrupting incoming traffic.
 
 The playbook implements the following tasks:
-- .Install docker
-- .Install pip3
-- .Install docker python module
-- .Download and launch docker elk container:761
+- Install docker
+- Install pip3
+- Install docker python module
+- Download and launch docker elk container:761
 
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
-
-Images/Install-elk
-
-Images/Docker-ps
+ - Images/Install-elk
+ - Images/Docker-ps
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -92,6 +90,7 @@ We have installed the following Beats on these machines:
 These Beats allow us to collect the following information from each machine:
 - Filebeat will monitor the VMs by generating and organizing log files. Specifically, it logs information about the file system, including which files
 have changed and when.
+- Metricbeat will monitor the VMs by periodically collecting metrics from the operating system and from services running on the server.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
@@ -107,8 +106,8 @@ SSH into the control node and follow the steps below:
 - Which file is the playbook? Where do you copy it?
   - ansible-playbook.yml
   - /etc/ansible
-- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK-Server on versus which t install Filebeat on?
-- It is updated on the hosts file, add hosts name elk to the webservers group followed by the IP address for the ELK-SERVER: 10.1.0.4 /ansible/hosts.txt
+- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK-SERVER on versus which t install Filebeat on?
+- It is updated on the hosts file, add hosts name elk to the webservers group followed by the IP address for the ELK-SERVER: 10.1.0.4 /etc/ansible/hosts
 - Which URL do you navigate to in order to check that the ELK server is running?
   - Public IP address on port 5601 (40.114.0.106:5601)
   - Kabana Application
