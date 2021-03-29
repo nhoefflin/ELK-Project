@@ -80,7 +80,7 @@ This ELK server is configured to monitor the following machines:
 - Web-1 10.0.0.5
 - Web-2 10.0.0.6
 - Web-3 10.0.0.7
-- ELK-Server 10.1.0.4 /Images/Network Interfaces
+- ELK-SERVER 10.1.0.4 (Images/Network-Interfaces.png)
 
 
 We have installed the following Beats on these machines:
@@ -101,7 +101,7 @@ SSH into the control node and follow the steps below:
     - 10.0.0.5 ansible_python_interpreter=/usr/bin/python3
     - 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
     - 10.0.0.7 ansible_python_interpreter=/usr/bin/python3
-- Run the playbook, and navigate to 10.0.0.5 and curl localhost/setup.php to check that the installation worked as expected.
+- Run the playbook and navigate to 10.0.0.5 and curl localhost/setup.php to check that the installation worked as expected.
 
 - Which file is the playbook? Where do you copy it?
   - ansible-playbook.yml
