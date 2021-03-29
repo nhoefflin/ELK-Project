@@ -92,7 +92,7 @@ The playbook below installs Filebeat on the target hosts.
 - https://github.com/nhoefflin/ELK-Project/blob/main/Ansible/filebeat-playbook.yml
 
 The playbook below installs Metricbeat on the target hosts.
-  - https://github.com/nhoefflin/ELK-Project/blob/main/Ansible/metricbeat-playbook.yml
+- https://github.com/nhoefflin/ELK-Project/blob/main/Ansible/metricbeat-playbook.yml
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
@@ -104,10 +104,12 @@ SSH into the control node and follow the steps below:
     - 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
     - 10.0.0.7 ansible_python_interpreter=/usr/bin/python3
     - [elk]
+      - https://github.com/nhoefflin/ELK-Project/blob/main/Images/hosts.png
 - Run the playbook and navigate to 10.0.0.5 and curl localhost/setup.php to check that the installation worked as expected.
 - Check to make sure that the ELK server is running:
   - Public IP address on port 5601 (40.114.0.106:5601/app/kibana#/home)
-  - Kabana Application
+  - Kabana Application:
+    - https://github.com/nhoefflin/ELK-Project/blob/main/Images/Kibana.png
 
 
 
