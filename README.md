@@ -66,10 +66,10 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - We can make updates to our server without disrupting incoming traffic.
 
 The playbook implements the following tasks:
-- Install docker
-- Install pip3
-- Install docker python module
-- Download and launch docker elk container:761
+- Install docker.
+- Install pip3.
+- Install docker python module.
+- Download and launch docker elk container.
 
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
  - (https://github.com/nhoefflin/ELK-Project/blob/main/Images/Install-elk.png)
@@ -80,7 +80,8 @@ This ELK server is configured to monitor the following machines:
 - Web-1 10.0.0.5
 - Web-2 10.0.0.6
 - Web-3 10.0.0.7
-- ELK-SERVER 10.1.0.4 (Images/Network-Interfaces.png)
+- ELK-SERVER 10.1.0.4
+  - (https://github.com/nhoefflin/ELK-Project/blob/main/Images/Network-Interfaces.png)
 
 
 We have installed the following Beats on these machines:
