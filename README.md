@@ -110,7 +110,7 @@ SSH into the control node and follow the steps below:
 - Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK-SERVER on versus which t install Filebeat on?
   - It is updated on the hosts file, add host name elk to the webservers group followed by the IP address for the ELK-SERVER: 10.1.0.4 /etc/ansible/hosts
 - Check to make sure that the ELK server is running:
-  - Public IP address on port 5601 (40.114.0.106:5601)
+  - Public IP address on port 5601 (40.114.0.106:5601/app/kibana#/home)
   - Kabana Application
 
 
