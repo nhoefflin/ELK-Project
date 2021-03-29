@@ -88,7 +88,7 @@ We have installed the following Beats on these machines:
 - Filebeat, which will monitor the VMs by generating and organizing log files. Specifically, it logs information about the file system, including which files have changed and when
 - Metricbeat, which will monitor the VMs by periodically collecting metrics from the operating system and from services running on the server.
 
-The playbook below instlls Filebeat on the target hosts.
+The playbook below installs Filebeat on the target hosts.
 - https://github.com/nhoefflin/ELK-Project/blob/main/Ansible/ansible-playbook.yml
 
 ### Using the Playbook
@@ -100,16 +100,12 @@ SSH into the control node and follow the steps below:
     - 10.0.0.5 ansible_python_interpreter=/usr/bin/python3
     - 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
     - 10.0.0.7 ansible_python_interpreter=/usr/bin/python3
+    - [elk]
 - Run the playbook and navigate to 10.0.0.5 and curl localhost/setup.php to check that the installation worked as expected.
-
-- Playbook file and path:
-  - ansible-playbook.yml
-  - /etc/ansible
-- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK-SERVER on versus which t install Filebeat on?
-  - It is updated on the hosts file, add host name elk to the webservers group followed by the IP address for the ELK-SERVER: 10.1.0.4 /etc/ansible/hosts
 - Check to make sure that the ELK server is running:
   - Public IP address on port 5601 (40.114.0.106:5601/app/kibana#/home)
   - Kabana Application
+
 
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
