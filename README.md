@@ -104,12 +104,12 @@ SSH into the control node and follow the steps below:
     - 10.0.0.7 ansible_python_interpreter=/usr/bin/python3
 - Run the playbook and navigate to 10.0.0.5 and curl localhost/setup.php to check that the installation worked as expected.
 
-- Which file is the playbook? Where do you copy it?
+- Playbook file and path:
   - ansible-playbook.yml
   - /etc/ansible
 - Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK-SERVER on versus which t install Filebeat on?
-  - It is updated on the hosts file, add hosts name elk to the webservers group followed by the IP address for the ELK-SERVER: 10.1.0.4 /etc/ansible/hosts
-- Which URL do you navigate to in order to check that the ELK server is running?
+  - It is updated on the hosts file, add host name elk to the webservers group followed by the IP address for the ELK-SERVER: 10.1.0.4 /etc/ansible/hosts
+- Check to make sure that the ELK server is running:
   - Public IP address on port 5601 (40.114.0.106:5601)
   - Kabana Application
 
