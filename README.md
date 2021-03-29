@@ -72,8 +72,8 @@ The playbook implements the following tasks:
 - Download and launch docker elk container:761
 
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
- - Images/Install-elk
- - Images/Docker-ps
+ - (https://github.com/nhoefflin/ELK-Project/blob/main/Images/Install-elk.png)
+ - (https://github.com/nhoefflin/ELK-Project/blob/main/Images/Docker-ps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
