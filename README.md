@@ -106,10 +106,10 @@ SSH into the control node and follow the steps below:
     - [elk]
       - https://github.com/nhoefflin/ELK-Project/blob/main/Images/hosts.png
 - Run the playbook and navigate to 10.0.0.5 and curl localhost/setup.php to check that the installation worked as expected.
-- Check to make sure that the ELK server is running:
-  - Public IP address on port 5601 (40.114.0.106:5601/app/kibana#/home)
-  - Kabana Application:
-    - https://github.com/nhoefflin/ELK-Project/blob/main/Images/Kibana.png
+ - Check to make sure that the ELK server is running:
+    - Public IP address on port 5601 (40.114.0.106:5601/app/kibana#/home)
+    - Kabana Application:
+      - https://github.com/nhoefflin/ELK-Project/blob/main/Images/Kibana.png
 
 
 
