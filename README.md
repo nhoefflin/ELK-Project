@@ -85,13 +85,11 @@ This ELK server is configured to monitor the following machines:
 
 
 We have installed the following Beats on these machines:
-- Filebeat
-- Metricbeat
+- Filebeat, which will monitor the VMs by generating and organizing log files. Specifically, it logs information about the file system, including which files have changed and when
+- Metricbeat, which will monitor the VMs by periodically collecting metrics from the operating system and from services running on the server.
 
-These Beats allow us to collect the following information from each machine:
-- Filebeat will monitor the VMs by generating and organizing log files. Specifically, it logs information about the file system, including which files
-have changed and when.
-- Metricbeat will monitor the VMs by periodically collecting metrics from the operating system and from services running on the server.
+The playbook below instlls Filebeat on the target hosts.
+- https://github.com/nhoefflin/ELK-Project/blob/main/Ansible/ansible-playbook.yml
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
