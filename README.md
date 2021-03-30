@@ -39,7 +39,7 @@ The configuration details of each machine may be found below.
 | Web-2      | Client   | 10.0.0.6   | Linux            |
 | Web-3      | Client   | 10.0.0.7   | Linux            |
 | ELK-Server | Gateway  | 10.1.0.4   | Linux            |
-
+https://github.com/nhoefflin/ELK-Project/blob/main/Images/Network-Interfaces.png
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet.
@@ -81,7 +81,7 @@ This ELK server is configured to monitor the following machines:
 - Web-2 10.0.0.6
 - Web-3 10.0.0.7
 - ELK-SERVER 10.1.0.4
-  - https://github.com/nhoefflin/ELK-Project/blob/main/Images/Network-Interfaces.png
+  
 
 
 We have installed the following Beats on these machines:
