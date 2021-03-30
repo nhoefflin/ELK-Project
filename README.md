@@ -72,9 +72,11 @@ The playbook implements the following tasks:
 - Install docker python module.
 - Download and launch docker elk container.
 
+[Install ELK](Images/Install-elk.png)
+
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 
-[Install ELK](Images/Install-elk.png)
+[docker ps](Images/Docker-ps.png)
 
 
 ### Target Machines & Beats
