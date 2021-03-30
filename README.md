@@ -96,7 +96,7 @@ The playbook below installs Filebeat on the target hosts.
 
 The playbook below installs Metricbeat on the target hosts.
 
-[Metricbeat Playbook](Ansible/Metricbeat-playbook.yml)
+[Metricbeat Playbook](Ansible/metricbeat-playbook.yml)
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
