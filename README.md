@@ -73,7 +73,7 @@ The playbook implements the following tasks:
 - Download and launch docker elk container.
 
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
- - https://github.com/nhoefflin/ELK-Project/blob/main/Images/Install-elk.png
+[Install ELK](Images/Install-elk.png)
  - https://github.com/nhoefflin/ELK-Project/blob/main/Images/Docker-ps.png
 
 ### Target Machines & Beats
