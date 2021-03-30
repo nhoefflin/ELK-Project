@@ -39,6 +39,7 @@ The configuration details of each machine may be found below.
 | Web-2      | Client   | 10.0.0.6   | Linux            |
 | Web-3      | Client   | 10.0.0.7   | Linux            |
 | ELK-Server | Gateway  | 10.1.0.4   | Linux            |
+
 https://github.com/nhoefflin/ELK-Project/blob/main/Images/Network-Interfaces.png
 ### Access Policies
 
@@ -81,7 +82,7 @@ This ELK server is configured to monitor the following machines:
 - Web-2 10.0.0.6
 - Web-3 10.0.0.7
 - ELK-SERVER 10.1.0.4
-  
+
 
 
 We have installed the following Beats on these machines:
