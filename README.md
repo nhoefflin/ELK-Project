@@ -75,7 +75,7 @@ The playbook implements the following tasks:
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 
 [Install ELK](Images/Install-elk.png)
- - https://github.com/nhoefflin/ELK-Project/blob/main/Images/Docker-ps.png
+
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -91,10 +91,10 @@ We have installed the following Beats on these machines:
 - Metricbeat, which will monitor the VMs by periodically collecting metrics from the operating system and from services running on the server.
 
 The playbook below installs Filebeat on the target hosts.
-- https://github.com/nhoefflin/ELK-Project/blob/main/Ansible/filebeat-playbook.yml
+[Filebeat Playbook](Ansible/filebeat-playbook.yml)
 
 The playbook below installs Metricbeat on the target hosts.
-- https://github.com/nhoefflin/ELK-Project/blob/main/Ansible/metricbeat-playbook.yml
+[Metricbeat Playbook](Ansible/Metricbeat-playbook.yml)
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
@@ -106,12 +106,12 @@ SSH into the control node and follow the steps below:
     - 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
     - 10.0.0.7 ansible_python_interpreter=/usr/bin/python3
     - [elk]
-      - https://github.com/nhoefflin/ELK-Project/blob/main/Images/hosts.png
+    [Hosts Configuration](Images/hosts.png)
 - Run the playbook and navigate to 10.0.0.5 and curl localhost/setup.php to check that the installation worked as expected.
  - Check to make sure that the ELK server is running:
     - Public IP address on port 5601 (40.114.0.106:5601/app/kibana#/home)
     - Kabana Application:
-      - https://github.com/nhoefflin/ELK-Project/blob/main/Images/Kibana.png
+    [Kibana](Images/Kibana.png)
 
 
 
